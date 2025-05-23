@@ -1,66 +1,49 @@
-// import { Row } from "antd";
-// import styled from "styled-components";
-
-// export const WrapperHeader = styled(Row)`
-//     background-color: rgb(26,148,255);
-//     align-items: center;
-//     gap: 16px;
-//     flex-wrap: nowrap;
-//     width: 1270px;
-//     padding: 10px 0;
-    
-// `;
-
-// export const WrapperTextHeader = styled.span`
-//     font-size: 18px;
-//     color: #fff;
-//     font-weight: bold;
-//     text-align: left;
-//     cursor: pointer;
-
-// `;
-
-// export const WrapperHeaderAccount = styled.div`
-//     display: flex;
-//     align-items: center;
-//     color: #fff;
-//     gap: 10px;
-// `
-
-// export const WrapperTextHeaderSmall = styled.span`
-//     color: #fff;
-//     font-size: 12px;
-//     white-space: nowrap;
-// `
-
-// export const WrapperContentPopup = styled.p`
-//     cursor: pointer;
-//     &:hover {
-//         color: rgb(26,148,255);
-//     }
-// `
-
 import styled from 'styled-components';
 
 export const WrapperHeader = styled.div`
-  position: sticky; /* hoặc dùng fixed nếu muốn header nổi hoàn toàn */
+  position: sticky;
   top: 0;
   z-index: 1000;
-  width: 100%;
-  padding: 16px 40px;
-  background-color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* tạo hiệu ứng đổ bóng khi cuộn */
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 16px;
-  }
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
 `;
+
+
+export const WrapperLogo = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+`;
+
+export const WrapperSearch = styled.div`
+  flex: 1;
+  max-width: 400px;
+  margin: 0 24px;
+`;
+
+export const WrapperRightSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+`;
+
+export const WrapperLanguage = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+`;
+
+export const WrapperUserInfo = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+`;
+
 
 export const WrapperHeaderLeft = styled.div`
   display: flex;
@@ -68,11 +51,7 @@ export const WrapperHeaderLeft = styled.div`
   gap: 40px;
 `;
 
-export const WrapperLogo = styled.h1`
-  font-size: 26px;
-  font-weight: bold;
-  cursor: pointer;
-`;
+
 
 export const WrapperNav = styled.div`
   display: flex;
